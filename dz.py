@@ -1,11 +1,8 @@
-num = int(input("Введите число в диопозоне от 1 до 100: "))
-if num < 1 or num > 100:
-    print("Число не в диапfзоне!")
-elif num % 3 == 0 and num % 5 == 0:
-    print("Fizz Buzz")
-elif num % 5 == 0:
-    print("Buzz")
-elif num % 3 == 0:
-    print("Fizz")
+num = int(input("Введите число: "))
+degree = int(input("Введите степень: "))
+if degree > 0 and degree < 8:
+    print(num ** degree)
+elif degree == 0:
+    print(num ** 0)
 else:
-    print(num)
+    print("Переделывайте...")
